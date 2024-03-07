@@ -13,7 +13,7 @@ export const Navbar = ({ sections, socials }: { sections: { id: string, label: s
       };
       
   return (
-    <Nav className="w-full justify-around p-1 sm:p-4 backdrop-blur bg-black/40">
+    <Nav className="z-50 w-full justify-around p-1 sm:p-4 backdrop-blur bg-black/40">
       <h1 className="sm:hidden md:inline text-center">Uriel Campos</h1>
       <ul className="justify-center gap-4 hidden sm:flex">
         {sections.map((section, index) => (
