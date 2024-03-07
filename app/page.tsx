@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-start gap-12 container px-24 my-24">
+    <main className="flex min-h-screen flex-col items-center justify-center gap-12 container px-4 my-12 md:px-24 md:my-24">
         <Title>JavaScript: El Poder del Desarrollo Web Dinámico</Title>
         <Introduction/>
         <KeyAspects/>

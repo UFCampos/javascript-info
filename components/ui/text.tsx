@@ -1,5 +1,5 @@
 export const Title = ({ children, ...props }: { children: React.ReactNode }) => {
-    return <h1 className="text-5xl w-full text-center font-bold" {...props}>{children}</h1>;
+    return <h1 className="text-4xl md:text-5xl w-full text-center font-bold" {...props}>{children}</h1>;
 }
 
 export const Subtitle = ({ children, ...props }: { children: React.ReactNode }) => {

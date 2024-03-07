@@ -37,7 +37,7 @@ export default function RootLayout({
   ]
   return (
     <html lang="es">
-      <body className={`${inter.className} bg-neutral-300 dark:bg-neutral-900 dark:text-white`}>
+      <body className={`${inter.className} bg-neutral-300 dark:bg-neutral-900 dark:text-white flex flex-col justify-center items-center`}>
         <Navbar sections={sections} socials={socials}/>
         {children}
         <footer className="text-center p-4">
