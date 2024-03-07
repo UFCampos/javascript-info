@@ -13,9 +13,9 @@ export const Navbar = ({ sections, socials }: { sections: { id: string, label: s
       };
       
   return (
-    <Nav className="w-full justify-around p-4 backdrop-blur bg-black/40">
-      By Uriel Campos 
-      <ul className="flex justify-center gap-4">
+    <Nav className="w-full justify-around p-1 sm:p-4 backdrop-blur bg-black/40">
+      <h1 className="sm:hidden md:inline text-center">Uriel Campos</h1>
+      <ul className="justify-center gap-4 hidden sm:flex">
         {sections.map((section, index) => (
           <li className="cursor-pointer" key={index} onClick={() => scrollToSection(section.id)}>
             <Button className="shadow text-white shadow-white/30 dark:shadow-white/50 px-4 py-2">{section.label}</Button>
