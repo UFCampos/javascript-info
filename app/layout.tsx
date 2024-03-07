@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -39,8 +40,8 @@ export default function RootLayout({
       <body className={`${inter.className} bg-neutral-300 dark:bg-neutral-900 dark:text-white`}>
         <Navbar sections={sections} socials={socials}/>
         {children}
-        <footer className="text-center p-4 underline">
-          Código fuente: <a href="https://github.com/UFCampos/javascript-info">https://github.com/UFCampos/javascript-info</a>
+        <footer className="text-center p-4">
+          Código fuente: <Link target="_blank" className='underline' href="https://github.com/UFCampos/javascript-info">https://github.com/UFCampos/javascript-info</Link>
         </footer>
       </body>
     </html>
